@@ -1,0 +1,22 @@
+/* src/Components/Preloader/Preloader.css */
+.preloader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #183d3d;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+
+  
+  
+  .preloader p{
+    color: #fff;
+    font-weight: 600;
+  }
+  

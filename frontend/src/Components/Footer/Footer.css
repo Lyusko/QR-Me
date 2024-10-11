@@ -1,0 +1,25 @@
+.footer {
+  color: #fff;
+
+  height: 4rem;
+  background: #183d3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: small;
+}
+
+.footer img {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  left: 37.5rem;
+  top: .25rem;
+
+  filter: brightness(0) saturate(100%) invert(49%) sepia(11%) saturate(926%) hue-rotate(105deg) brightness(94%) contrast(83%);
+}
+
+.footer img:hover {
+filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7496%) hue-rotate(331deg) brightness(99%) contrast(104%);
+}

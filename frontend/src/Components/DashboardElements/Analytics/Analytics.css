@@ -1,0 +1,35 @@
+.main-analytics {
+  background-color: var(--dashboard-color);
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  padding: 25px;
+  grid-template-areas: 
+  "c1";
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card-analytics {
+  border-radius: 10px;
+  background-color: var(--card-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: var(--secondary-text-color);
+}
+
+
+.message-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#message-p  {
+  font-size: 18px;
+}
+

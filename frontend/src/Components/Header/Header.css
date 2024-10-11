@@ -1,0 +1,171 @@
+#header {
+
+  min-height: 100vh;
+  background-color: var(--background-color);
+  padding-top: 5rem;
+}
+
+.content-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rem 15rem;
+}
+
+.text-wrap {
+  flex: 2;
+}
+
+.text-wrap p {
+  width: 500px;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.text-wrap h1 {
+  color: var(--text-color);
+  font-size: 64px;
+}
+
+.text-wrap h3 {
+  color: var(--text-color);
+}
+
+.text-wrap span {
+  color: #5c8374;
+}
+
+#underline-keyword {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #5c8374;
+}
+
+.cta-wrap button {
+  margin-top: 2rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  background: var(--primary-color);
+  transition: 0.2s ease-in;
+  border: none;
+  height: 35px;
+  width: 140px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.cta-wrap button:hover {
+  transition: 0.2s ease-in;
+  color: var(--text-color);
+  background: var(--secondary-color);
+  box-shadow: 25px 15px var(--primary-color);
+}
+
+.image-wrap {
+  flex: 1;
+  max-width: 600px;
+}
+
+.image-wrap img {
+  width: 400px;
+}
+
+@media screen and (max-width: 670px) {
+  
+
+  .text-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-wrap h1 {
+    font-size: 25px;
+    text-wrap: nowrap;
+  }
+
+  .text-wrap p {
+    max-width: 270px;
+  }
+  .underline-keyword {
+    padding-bottom: 1px;
+  }
+
+  .image-wrap img {
+    max-width: 270px;
+  }
+
+  .content-wrap {
+    display: flex;
+
+    flex-direction: column-reverse;
+  }
+
+  .card {
+    width: 320px;
+    height: 150px;
+    flex-direction: column;
+    align-items: start;
+    gap: 2px;
+  }
+
+  .card:hover {
+    box-shadow: none;
+  }
+
+  .card img {
+    display: none;
+  }
+
+  .card h1 {
+    font-size: 12px;
+    margin-left: 1rem;
+  }
+
+  .card p {
+    font-size: 12px;
+    width: 300px;
+    margin-left: 1rem;
+  }
+
+  .cta-button button:hover {
+    box-shadow: none;
+  }
+
+  .left {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .menu-links {
+    display: none;
+  }
+
+  .login-cta {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px ) {
+
+.content-wrap {
+  padding: 0;
+}
+
+#header {
+  display: flex;
+  padding: 0 -2rem;
+  justify-content: center;
+  align-items: center;
+}
+#underline-keyword {
+  display: none;
+}
+
+.image-wrap {
+  display: none;
+}
+
+}

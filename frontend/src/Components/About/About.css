@@ -1,0 +1,181 @@
+#about {
+
+  min-height: 100vh;
+  background: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrap-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.row-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.row-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  gap: 15px;
+  height: 400px;
+  background: var(--primary-color);
+  border-radius: 15px;
+  transition: 0.2s ease-in-out;
+}
+
+.card:hover {
+  transition: 0.2s ease-in-out;
+  box-shadow: 0px 15px var(--secondary-color);
+}
+
+.card h1 {
+  font-size: 16px;
+  color: #fff;
+  text-wrap: nowrap;
+}
+
+.card p {
+  width: 220px;
+  color: var(--secondary-color);
+  font-size: 14px;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (max-width: 1170px) {
+  .content-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 5rem;
+  }
+
+  .content-wrap-1 {
+    display: flex;
+    gap: 20px;
+  }
+
+  .row-1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 300px;
+    height: 300px;
+    margin-top: 2px;
+  }
+
+  .card:hover {
+    box-shadow: none;
+  }
+
+  .card img {
+    width: 100px;
+  }
+
+  .row-2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .nav {
+    padding: 0 2rem;
+  }
+
+  .text-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-wrap h1 {
+    font-size: 25px;
+    text-wrap: nowrap;
+  }
+
+  .text-wrap p {
+    max-width: 270px;
+  }
+  .underline_keyword {
+    padding-bottom: 1px;
+  }
+
+  .photo-wrap img {
+    max-width: 270px;
+  }
+
+  .content-wrap-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 350px;
+    height: 150px;
+    flex-direction: column;
+    align-items: start;
+    gap: 2px;
+  }
+
+  .card:hover {
+    box-shadow: none;
+  }
+
+  .card img {
+    display: none;
+  }
+
+  .card h1 {
+    font-size: 12px;
+    margin-left: 1rem;
+  }
+
+  .card p {
+    font-size: 12px;
+    width: 300px;
+    margin-left: 1rem;
+  }
+
+  .cta-button button:hover {
+    box-shadow: none;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .left-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .menu-links {
+    display: none;
+  }
+
+  .login-cta {
+    display: none;
+  }
+}

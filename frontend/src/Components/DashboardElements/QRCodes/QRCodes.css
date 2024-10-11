@@ -1,0 +1,217 @@
+.main-qr {
+  background-color: var(--dashboard-color);
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  padding: 25px;
+  grid-template-areas: 
+  "c1 c2";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card-qr {
+  border-radius: 10px;
+  background-color: var(--card-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 25px;
+  color: var(--secondary-text-color);
+}
+
+.card-qr:nth-child(1) {
+  grid-area: c1;
+}
+
+.card-qr:nth-child(2){
+  grid-area: c2;
+}
+
+.card-qr img {
+  width: 250px;
+  height: 250px;
+}
+
+
+
+
+.no-codes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 50px;
+ 
+}
+
+.input-box {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-box  input{
+  padding: 10px;
+  border: none;
+  color: var(--input-text-color);
+  background-color: var(--input-color);
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.input-box button {
+  width: 160px;
+  border: none;
+  background-color: var(--logo-color);
+  border-radius: 10px;
+  color: var(--card-color);
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.input-box button:hover {
+  transition: .3s ease-in-out;
+  background-color: var(--text-color);
+  color: #5c8374;
+}
+
+.card-qr:nth-child(1) {
+  grid-area: c1;
+}
+
+.card-qr:nth-child(2) {
+  grid-area: c2;
+}
+
+.edit-delete {
+  display: flex;
+  gap: 2rem;
+}
+
+.carousel-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.carousel-content p {
+  color: #000;
+  font-weight: 500;
+}
+
+.page-counter {
+  font-weight: 500;
+  color: #000;
+}
+
+.edit-delete button {
+  width: 160px;
+  height: 40px;
+  border: none;
+  background-color: #183d3d;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.edit-delete button:hover {
+  transition: .3s ease-in-out;
+  background-color: #040d12;
+  color: #fff;
+}
+
+.pages-navigate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pages-navigate button {
+  color: #fff;
+  background-color: #183d3d;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  display: flex;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 1500px) {
+  .main-qr {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "c1"
+    "c2";
+  }
+
+  .card-qr {
+    width: 100%; /* Ensure cards take full width */
+    padding: 1rem 1rem;
+  }
+
+
+
+
+}
+
+@media screen and (max-width: 690px) {
+ 
+
+  .card-qr img {
+    width: 30%;
+    height: 30%;
+  }
+
+  .no-codes-container {
+    
+    gap: 0px;
+  }
+
+  .input-box {
+    flex-direction: column;
+  }
+
+  .carousel-container {
+    padding: 0px;
+    gap: 0px;
+  }
+
+  .input-box button {
+    width: 100%;
+    height: 32px;
+  };
+  
+
+}
+
+@media screen and (max-width: 512px) {
+
+  .input-box {
+    width: 50%;
+  }
+
+
+
+
+
+  .no-codes-container {
+    display: none;
+  }
+  
+}
+
+

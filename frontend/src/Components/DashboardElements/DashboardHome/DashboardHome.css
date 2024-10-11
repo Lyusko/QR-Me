@@ -1,0 +1,360 @@
+.main {
+  background-color: var(--dashboard-color);
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  padding: 25px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "c1 c2 c3"
+  "c4 c4 c5"
+  "c4 c4 c6";
+  gap: 20px;
+
+}
+
+.card-dash {
+  background-color: var(--card-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem;
+  
+}
+
+.modal-content img {
+  max-width: 100%;
+}
+
+.card-dash:nth-child(1) {
+  grid-area: c1;
+  display: flex;
+  
+}
+
+.card-dash:nth-child(1) h1 {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--secondary-text-color);
+}
+
+.card-dash:nth-child(1) p {
+  font-size: 64px;
+  font-weight: 400;
+  color:var(--text-color);
+}
+
+.card-dash:nth-child(2) {
+  grid-area: c2;
+}
+
+.card-dash:nth-child(2) h1 {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--secondary-text-color);
+}
+
+.card-dash:nth-child(2) p {
+  font-size: 64px;
+  font-weight: 400;
+  color:var(--text-color);
+}
+
+
+.card-dash:nth-child(3) {
+  grid-area: c3;
+}
+
+.card-dash:nth-child(3) h1 {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--secondary-text-color);;
+}
+
+.card-dash:nth-child(3) p {
+  font-size: 64px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+
+.card-dash:nth-child(4) {
+  grid-area: c4;
+}
+
+.card-dash:nth-child(4) h1 {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--secondary-text-color);;
+}
+
+.card-dash:nth-child(4) p {
+  font-size: 32px;
+  font-weight: 400;
+  color:var(--text-color);
+}
+
+.card-dash:nth-child(4) span {
+  color: var(--secondary-text-color);
+}
+
+.card-dash:nth-child(4) h2 {
+  font-size: 16px;
+  color: var(--secondary-text-color);
+  font-weight: 400;
+}
+
+
+.card-dash:nth-child(5) {
+  grid-area: c5;
+}
+
+.card-dash:nth-child(5) h1 {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--secondary-text-color);
+}
+
+.card-dash:nth-child(5) p {
+  font-size: 64px;
+  font-weight: 400;
+  color:var(--text-color);;
+}
+
+.card-dash:nth-child(6) {
+  grid-area: c6;
+
+}
+
+.subscribe-modal {
+  color: var(--secondary-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+
+}
+
+.subscribe-modal img {
+  width: 250px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.modal-content p {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+}
+
+.modal-content button {
+  width: 120px;
+  height: 35px;
+  border-radius: 15px;
+  border: none;
+  color: var(--card-color);
+  background-color: var(--secondary-text-color);;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal-content button:hover {
+  transition: 0.3s;
+  color: var(--secondary-text-color);
+  background-color: var(--text-color);
+}
+
+
+
+@media screen and (max-width: 1350px) {
+
+ #subscribe-text {
+    font-size: .9rem;
+  }
+ 
+
+}
+
+@media screen and (max-width: 900px) {
+  .dashboard-container {
+    grid-template-columns: auto 1fr;
+  
+  }
+
+  /* Sidebar Collapse */
+
+  .sidebar {
+    max-width: fit-content;
+    justify-content: start;
+    padding: 5rem 1rem;
+   
+  }
+
+  .links  {
+    margin-bottom: 0;
+  }
+  
+  .logo {
+    display: none;
+  }
+  
+  .user-info {
+    display: none;
+  }
+  
+  .links button {
+    display: none;
+  }
+  
+  .links img{
+    width: 32px;
+    height: 32px;
+  }
+
+  .logout-button {
+    position: absolute;
+    bottom: 2rem;
+  }
+
+  .logout-button p {
+    display: none;
+  }
+
+  .toggle-switch {
+    margin-top: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 676px) {
+
+  .header h1 {
+   font-size: 1rem;
+  }
+
+  .toggle-switch {
+    width: 16px;
+    height: 16px;
+  }
+
+  .switch-button img {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .main {
+    grid-template-columns: 1fr; /* Single column */
+    grid-template-rows: auto; /* Adjust rows automatically */
+    grid-template-areas: 
+      "c1"
+      "c2"
+      "c3"
+      "c4"
+      "c5"
+      "c6"; /* Each card will now stack vertically */
+      
+    }
+  
+  .card-dash {
+    width: 100%; /* Ensure cards take full width */
+    padding: 1rem 1rem;
+  }
+
+  .card-dash:nth-child(1) h1 {
+    font-size: .7rem;
+  }
+
+  .card-dash:nth-child(1) p {
+    font-size: 1.3rem;
+  }
+
+  .card-dash:nth-child(2) h1 {
+    font-size: .7rem;
+  }
+
+  .card-dash:nth-child(2) p {
+    font-size: 1.3rem;
+  }
+
+  .card-dash:nth-child(3) h1 {
+    font-size: .7rem;
+  }
+
+  .card-dash:nth-child(3) p {
+    font-size: 1.3rem;
+  }
+
+  .card-dash:nth-child(4) h1 {
+    font-size: .7rem;
+  }
+
+  .card-dash:nth-child(4) p {
+    font-size: .5rem;
+  
+  }
+
+  #subscribe-text {
+    font-size: .5rem;
+    margin-top: .5rem;
+  }
+ 
+  .card-dash:nth-child(5) h1 {
+    font-size: .7rem;
+  }
+
+  .card-dash:nth-child(5) p {
+    font-size: 1.3rem;
+  }
+
+  
+
+  .card-dash:nth-child(6) h1 {
+    font-size: .7rem;
+  }
+
+
+  .modal-content {
+    flex-direction: row;
+  }
+
+  .modal-content img {
+    max-width: 40%;
+  }
+  
+  .modal-content button {
+    width: 7rem;
+    height: 1rem;
+    font-size: .3rem;
+  }
+
+ .modal-content p {
+  font-size: .6rem;
+ }
+ 
+ .card-dash:nth-child(6) img {
+  display: none;
+}
+
+.modal-content {
+  flex-direction: column;
+}
+
+}
+
+@media screen and (max-width: 386px) {
+  
+  
+
+
+}
+

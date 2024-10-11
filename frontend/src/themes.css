@@ -1,0 +1,60 @@
+:root {
+  --background-color: #d7e0dd;
+  --text-color: #2b2b2b;
+  --logo-color: #2b2b2b;
+  --url-button-color: #2b2b2b;
+  --secondary-text-color: #6c6c6c;
+  --primary-color: #183d3d;
+  --secondary-color: #5c8374;
+  --sidebar-color: #fff;
+  --dashboard-color: #d7e0dd;
+  --card-color: #EDF6F9;
+  --url-color: #d7e0dd;
+
+
+
+  --input-color: grey;
+  --input-text-color: #2b2b2b;
+  --icons-color: brightness(0) saturate(100%) invert(10%) sepia(9%) saturate(19%) hue-rotate(325deg) brightness(92%) contrast(82%);
+  /* Define more variables for things like borders, button colors, etc. */
+
+
+  /*Font Sizes */
+  --size-xxs: .5rem;
+  --size-xs: .75rem;
+  --size-sm: .875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem
+
+}
+
+[data-theme="dark"] {
+  --background-color: #040d12;
+  --primary-color: #183d3d;
+  --secondary-color: #5c8374;
+  --text-color: #ffffff;
+  --logo-color: #5c8374;
+  --secondary-text-color: #5c8374;
+  --sidebar-color: #040d12;
+  --dashboard-color: #03090d;
+  --card-color: #183d3d;
+  --url-color: #fff;
+  --input-color: #fff;
+  --input-text-color: grey;
+  --icons-color: none;
+  --url-button-color: #183d3d;
+
+
+
+  /* Define more variables for the dark theme */
+}

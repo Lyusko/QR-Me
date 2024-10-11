@@ -1,0 +1,168 @@
+.main-urlshortener {
+  background-color:var(--dashboard-color);
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  padding: 25px;
+  grid-template-areas: 
+  "c1";
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card-urlshortener {
+  border-radius: 10px;
+  background-color: var(--card-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: #5c8374;
+  padding: 25px;
+}
+
+.shortener-container {
+  background-color: var(--url-color);
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.shortener-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.shortener-header h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.shortener-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shortener-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.shortener-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--url-button-color);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shortener-form button:hover {
+  background-color: #000;
+}
+
+.shortener-error {
+  color: red;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.shortened-url {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.shortened-url p {
+  font-size: 18px;
+  color: #333;
+}
+
+.shortened-url a {
+  color: #5c8374;
+  text-decoration: none;
+}
+
+.shortened-url a:hover {
+  text-decoration: underline;
+}
+
+.url-management {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.url-management h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.url-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.url-item p {
+  margin: 0;
+}
+
+.url-item a {
+  color: #5c8374;
+}
+
+.url-actions button {
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #183d3d;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+}
+
+
+
+.url-edit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.url-edit input {
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.url-edit button {
+ 
+  border: none;
+  border-radius: 5px;
+  background-color: #183d3d;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+}
+
+.url-edit input {
+  flex: 1;
+}
